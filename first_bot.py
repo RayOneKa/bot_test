@@ -17,6 +17,10 @@ def send_welcome(message):
 
     bot.send_message(message.chat.id, messages[rnd])
 
+@bot.message_handler(commands=['start'])
+def send_start(message):
+    bot.send_message(message.chat.id, "Вот он - я! Самый лучший бот")
+
 
 if __name__ == '__main__':
     bot.infinity_polling(none_stop=True)

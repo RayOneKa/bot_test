@@ -1,9 +1,6 @@
 import telebot
 from telebot import types # кнопки
 from string import Template
-from telebot import apihelper
-
-apihelper.proxy = {'https': 'socks5h://154.16.202.22:1080'}
 
 bot = telebot.TeleBot("972288295:AAH666u2dez6FNSM6hhURbjVomoSTgKbBM8")
 

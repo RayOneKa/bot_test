@@ -13,13 +13,7 @@ def send_welcome(message):
     messages = ['а? кто здесь?', 'Ну да, я - бот! И что?', 'На самом деле я папа botFather. Только тсс!', 'Zzz...', 'Всем привет!', 'Ну я так не играю...']
     ln = len(messages) - 1
 
-    global last_message
-    if last_message == None:
-        last_message = rnd = 0
-    else:
-        rnd = last_message
-        while rnd != last_message:
-            rnd = randint(0, ln)
+    rnd = randint(0, ln)
 
     bot.send_message(message.chat.id, messages[rnd])
 
